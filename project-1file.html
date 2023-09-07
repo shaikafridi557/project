@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Fitness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    margin:0px;
+    padding:0px;
+    background-image: url(background.jpg);
+    
+}
+.left{
+    display:inline-block;
+    /*border:2px solid red;*/
+    position:absolute;
+    left:34px;
+    top:20px;
+}
+.left img{
+
+width:120px;
+
+}
+.left div{
+    text-align: center;
+}
+.right{
+    display: inline-block;
+   /* border:2px solid green;*/
+    position:absolute;
+    right:34px;
+    top:30px;
+}
+.mid{
+    display: block;
+    width: 449px;
+    margin: 29px auto;
+   /* border :2px solid yellow;*/
+}
+.navbar{
+    display:inline-block;
+
+}
+.navbar li{
+    display:inline-block;
+}
+.navbar li a{
+    color:white;
+    text-decoration: none;
+    padding:18px 14px;
+    font-size: 15px;
+}
+.navbar li a:hover,.navbar li a:active{
+    text-decoration: underline;
+    cursor: pointer;
+    color: lavender;
+}
+.btn{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin:0px 9px;
+    color:white;
+    background-color: black;
+    padding:4px 14px;
+    border:2px solid grey;
+    border-radius: 14px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: gray;
+}
+.container{
+    /*border:2px solid green;*/
+    margin:232px 35px;
+    padding-top:74px ;
+    padding-left: 10px;
+    padding-bottom:34px ;
+    padding-right:26px ;
+    width:35%;
+    border-radius: 28px;
+}
+.group input{
+    text-align: center;
+    display:block;
+    width:508px;
+    padding:6px;
+    font-size:25px;
+    border-radius:8px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px auto;
+}
+.container h1{
+    text-align: center;
+}
+#button{
+    display: block;
+    width:74%;
+    margin:20px auto;
+}
+#button:hover{
+    background-color: aqua;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="logo.png">
+           <div>AJ FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CENTER</a></li>
+                <li><a href="#"> CONTACT US</a></li>
+            </ul>
+        </div>
+        <div  class="right">
+            <button class="btn">call us now</button>
+            <button class="btn"> email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN NOW IN BEST GYM IN TIRVURU</h1>
+        <form action="noction.php">
+            <div class="group">
+            <input type="text" name="name" id="name" placeholder="enter your name"><br><br>
+            <input type="number" name="number" id="mobile number" placeholder="enter your number"><br><br>
+            <input type="email" name="email" id="email id" placeholder="enter your email"><br><br>
+            <input type="age" name="age" id="name" placeholder="enter your age"><br><br>
+            <input type="button" value="submit" id="button">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
